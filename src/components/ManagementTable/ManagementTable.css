@@ -1,0 +1,9 @@
+.management-table-wrapper {
+  width: 50%;
+  height: 100%;
+}
+
+.input-container {
+  background-color: var(--second-color-400);
+  padding: 20px;
+}
