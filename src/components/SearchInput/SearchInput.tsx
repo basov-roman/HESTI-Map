@@ -1,5 +1,6 @@
 import "./SearchInput.css";
-import { IoIosSearch, IoMdClose } from "react-icons/io";
+import { IoIosSearch } from "react-icons/io";
+import { IoCloseOutline } from "react-icons/io5";
 import { useState } from "react";
 
 const SearchInput = () => {
@@ -20,7 +21,7 @@ const SearchInput = () => {
           placeholder="Search on map"
         />
         {searchTerm && (
-          <IoMdClose className="close-icon icon" onClick={handleClear} />
+          <IoCloseOutline className="close-icon icon" onClick={handleClear} />
         )}
       </div>
     </div>

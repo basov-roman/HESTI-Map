@@ -1,0 +1,57 @@
+.polygons-table {
+  width: 100%;
+  border-collapse: collapse;
+
+  .content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    padding: 16px;
+    background-color: var(--second-color-100);
+
+    span {
+      font-family: var(--font-family-secondary);
+      font-weight: 600;
+      color: var(--second-color-700);
+    }
+
+    .icon {
+      color: var(--second-color-700);
+    }
+  }
+
+  th.name,
+  th.coordinates {
+    cursor: pointer;
+
+    .icon {
+      width: 20px;
+      height: auto;
+    }
+  }
+
+  th.action {
+    border-top-right-radius: 8px;
+    padding: 16px 16.5px;
+    background-color: var(--second-color-100);
+    font-family: var(--font-family-secondary);
+    font-weight: 600;
+    color: var(--second-color-700);
+  }
+
+  tbody tr:hover {
+    cursor: pointer;
+    background-color: var(--first-color-200);
+  }
+
+  td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid var(--third-color-200);
+    font-family: var(--font-family-primary);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--second-color-700);
+  }
+}

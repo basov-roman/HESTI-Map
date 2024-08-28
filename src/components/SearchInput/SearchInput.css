@@ -15,14 +15,14 @@
 }
 
 .search-input-container .search-icon {
-  left: 10px;
+  left: 16px;
   width: 24px;
   height: auto;
   color: var(--second-color-200);
 }
 
 .search-input-container .close-icon {
-  right: 10px;
+  right: 16px;
   width: 24px;
   height: auto;
   color: var(--first-color-700);
@@ -30,12 +30,14 @@
 }
 
 .search-input-container input {
-  padding: 10px 40px 10px 40px;
+  padding: 16px 48px 16px 48px;
   width: 100%;
   border-radius: 8px;
   border: 1px var(--third-color-200) solid;
   color: var(--second-color-700);
-  font-family: "PP Neue Montreal Medium";
+  font-family: var(--font-family-secondary);
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .search-input-container input::placeholder {

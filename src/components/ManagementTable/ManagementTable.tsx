@@ -1,5 +1,6 @@
 import "./ManagementTable.css";
 import SearchInput from "../SearchInput/SearchInput";
+import PolygonsMarkersManagement from "../PolygonsMarkersManagement/PolygonsMarkersManagement";
 
 const ManagementTable = () => {
   return (
@@ -7,6 +8,8 @@ const ManagementTable = () => {
       <div className="input-container">
         <SearchInput />
       </div>
+
+      <PolygonsMarkersManagement />
     </div>
   );
 };

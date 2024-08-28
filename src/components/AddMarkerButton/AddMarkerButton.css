@@ -1,0 +1,34 @@
+.add-marker-button-wrapper {
+  border: none;
+  background-color: var(--third-color-100);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  gap: 8px;
+  border-radius: 2px;
+
+  .icon {
+    width: 24px;
+    height: auto;
+    color: var(--second-color-700);
+  }
+
+  span {
+    font-family: var(--font-family-third);
+    font-weight: 700;
+    font-size: 14px;
+    color: var(--second-color-700);
+  }
+}
+
+.add-marker-button-wrapper:hover {
+  .icon {
+    color: var(--first-color-700);
+  }
+
+  span {
+    color: var(--first-color-700);
+  }
+}
