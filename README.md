@@ -1,50 +1,22 @@
-# React + TypeScript + Vite
+# How to run this project:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. yarn install
+2. yarn dev
 
-Currently, two official plugins are available:
+# About project's structure:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+**public/**: Contains static files such as icons or other resources that need to be kept unchanged and available in the project root.
 
-## Expanding the ESLint configuration
+**src/**: The main directory containing all the source code of the project.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+**assets/**: Stores various static resources used in the project, such as font and color files.
+**fonts/**: A directory for font files.
+**colors.ts**: A file that contains the color palette used in the project.
 
-- Configure the top-level `parserOptions` property like this:
+**components/**: Contains all the React components used in the project. Components are the basic building blocks of the user interface.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+**store/**: Contains logic for managing application state using Redux.
+**slices/**: A directory for Redux slices, each of which is responsible for a specific piece of state.
+**store.ts**: The main file for the Redux store configuration.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+**types/**: Contains TypeScript types used in the project.
